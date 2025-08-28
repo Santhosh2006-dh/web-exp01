@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URC Hotel - Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+       
+        header {
+            background: url("wel.jpg") no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgb(253, 239, 239);
+        }
+        header p {
+            font-size: 20px;
+            text-shadow: 1px 1px 4px rgb(253, 249, 249);
+        }
+
+        
+        nav {
+            background: #fdfdfe;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;   
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #1abc9c;
+        }
+
+       
+        .welcome {
+            padding: 40px;
+            text-align: center;
+            font-family: unset;
+        }
+        .welcome h2 {
+            font-size: 28px;
+        }
+
+        
+        .features {
+            display: flex; 
+            justify-content: space-around;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .feature {
+            background: white;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+       
+        .book-btn {
+            display: block;
+            width: 250px;
+            margin: 40px auto;
+            padding: 14px;
+            background: #FFD814;  
+            color: #111;           
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid #FCD200;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .book-btn:hover {
+            background: #f6f5f2;  
+            transform: scale(1.05);
+        }
+        .book-btn:active {
+            background: #f2efed;  
+            transform: scale(0.98);
+        }
+
+      
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to URC Hotel</h1>
+        <p>Luxury & Comfort at Your Service</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="room.html">Rooms</a>
+        <a href="booking.html">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="welcome" id="home">
+        <h1>Experience the Best Stay in Town</h1>
+        <h3>At URC Hotel, we offer world-class hospitality, modern amenities, and a relaxing atmosphere for your comfort. Whether you are traveling for business or leisure, our rooms are designed to give you the perfect blend of luxury and convenience.</h3>
+    </section>
+
+  
+    <section class="features">
+        <div class="book-btn">
+            <h3>🏨 Comfortable Rooms</h3>
+            <p>Choose from Single, Double, Deluxe, and Suite options with top-class facilities.</p>
+        </div>
+        <div class="book-btn">
+            <h3>🍴 Restaurant</h3>
+            <p>Enjoy multi-cuisine dishes at our in-house restaurant with 24/7 service.</p>
+        </div>
+        <div class="book-btn">
+            <h3>🚗 Easy Access</h3>
+            <p>Located in the heart of the city with free parking and travel desk facilities.</p>
+        </div>
+    </section>
+
+   
+    <a href="book.html" class="book-btn">Book a Room</a>
+
+
+    <footer id="contact">
+        <p>Contact Us: urchotel@gmail.com | +91 98765 43210</p>
+        <p>&copy; 2025 URC Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

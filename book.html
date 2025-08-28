@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URC Hotel </title>
+    <style>
+        body {
+           
+
+    font-family: 'Segoe UI';
+    text-align: center;
+    
+}
+
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1c40f;   
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+header p {
+    font-size: 20px;
+    color: #ecf0f1;   
+    font-style: italic;
+}
+
+.room-info h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.room-info p {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+            font-family:calc();
+            background: #f9f9f9;
+            margin:0;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .thumbnails {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .thumbnails img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid transparent;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s, border 0.3s;
+        }
+        .thumbnails img:hover {
+            transform: scale(1.05);
+            border: 2px solid #2c3e50;
+        }
+        .thumbnails img.active {
+            border: 2px solid #e67e22;
+        }
+        .main-image img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+        .room-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+
+
+    <header>
+        <h1>URC Hotel🏨</h1>
+    </header>
+
+    <div class="container">
+        <div class="thumbnails">
+            <img src="single.jpg" alt="Single Room" onclick="showImage(this, 'Single Room', '₹2000 / night | 1 Bed, Free WiFi, AC')">
+            <img src="doub.webp" alt="Double Room" onclick="showImage(this, 'Double Room', '₹3500 / night | 2 Beds, Free WiFi, AC')">
+            <img src="dul.webp" alt="Deluxe Room" onclick="showImage(this, 'Deluxe Room', '₹5000 / night | Luxury Bed, WiFi, AC, TV')">
+            <img src="suite.webp" alt="Suite" onclick="showImage(this, 'Suite', '₹8000 / night | 2 Rooms, WiFi, AC, TV, Mini Bar')">
+        </div>
+        <p><span style="font-family: 'Courier New', monospace; color: red; font-size: 20px;">Room Overview.</span></p>
+        <p><span style="text-align: center;"</span></p>
+
+
+     
+        <div class="main-image">
+            <img id="highlighted" src="single.jpg" alt="Room">
+            <div class="room-info" id="roomInfo">
+                <h3>Single Room</h3>
+                <p>₹2000 / night | 1 Bed, Free WiFi, AC</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showImage(imgElement, title, details) {
+            
+            document.getElementById('highlighted').src = imgElement.src;
+            document.getElementById('roomInfo').innerHTML = `<h3>${title}</h3><p>${details}</p>`;
+
+            let thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('active'));
+
+            imgElement.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
+

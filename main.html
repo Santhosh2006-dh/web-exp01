@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URC LODGE - Room Booking Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background: #34495e;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;   
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+
+    .rooms {
+      display: flex; 
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap; /* keep in one row */
+      margin: 30px;
+    }
+    .room-card {
+      background: white;
+      width: 220px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+      flex-shrink: 0; /* prevent shrinking */
+    }
+
+    /* Amazon Style Button */
+    .room-card button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 12px;
+      background: #FFD814;   
+      color: #111;
+      border: 1px solid #FCD200;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+    .room-card button:hover {
+      background: #F7CA00;  
+      transform: scale(1.03);
+    }
+    .room-card button:active {
+      background: #E6B800;
+      transform: scale(0.97);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <h1>URC LODGE</h1>
+    <p>Room Booking Management System</p>
+  </header>
+
+  <nav>
+   <nav> 
+    <a href="home.html">Home</a> 
+    <a href="room.html">Rooms</a> 
+    <a href="#book.html">Book a Room</a> 
+    <a href="#rooms">Available Rooms</a> <a href="#contact">Contact</a> 
+    <a href="home.html">Home</a>
+    <a href="room.html">Rooms</a>
+    <a href="#book.html">Book a Room</a>
+    <a href="#rooms">Available Rooms</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  </nav>
+
+  <section id="rooms">
+    <h1 align="center">Available Rooms</h1>
+    <div class="rooms">
+      <div class="room-card">
+        <h3>Single Room</h3>
+        <p>₹2000 / night</p>
+        <p>1 Bed, Free WiFi, AC</p>
+        <button>Book Single Room</button>
+      </div>
+      <div class="room-card">
+        <h3>Double Room</h3>
+        <p>₹3500 / night</p>
+        <p>2 Beds, Free WiFi, AC</p>
+        <button>Book Double Room</button>
+      </div>
+      <div class="room-card">
+        <h3>Deluxe Room</h3>
+        <p>₹5000 / night</p>
+        <p>Luxury Bed, WiFi, AC, TV</p>
+        <button>Book Deluxe Room</button>
+      </div>
+      <div class="room-card">
+        <h3>Suite</h3>
+        <p>₹8000 / night</p>
+        <p>2 Rooms, WiFi, AC, TV, Mini Bar, Fresh Juice</p>
+        <button>Book Suite</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact Us: urclodge@gmail.com | +91 98765 43210</p>
+    <p>&copy; 2025 URC Lodge. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
